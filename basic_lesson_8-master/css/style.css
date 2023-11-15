@@ -1,16 +1,91 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500&family=Roboto+Serif:ital,opsz,wght@0,8..144,500;0,8..144,700;1,8..144,500&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');*/
-h1{
-    font-family: 'RobotoBoldNormal','roboto','roboto serif','sans-serif';
-    color: darkorange;
-    font-size: 15px;
+:root {
+    --accent-color: #7fff3f;
+    --explore-width: 252px;
+
+    --main-bg: #333333;
+
+    --font-sm: 12px;
+    --font-md: 16px;
+    --font-lg: 22px;
+    --font-xl: 28px;
+
+    --template-content-width: 1250px;
+    --horizontal-offset: 15px;
+
+    /*--content-width: calc(var(--template-content-width) + calc(var(--horizontal-offset) * 2));*/
+
+    --main-font-family-boldNormal: 'RobotoBoldNormal',sans-serif;
+    --main-font-family-500Normal: 'Roboto500Normal',sans-serif;
+    --main-font-family-100Italic:  'Roboto100Italic',sans-serif;
 }
-h2{
-    font-family: 'Roboto500Normal','roboto serif','sans-serif';
-    color: darkorange;
-    font-size: 15px;
+.container{
+    /*height: 990px;*/
+    /*width: 860px;*/
+    /*border: 2px solid #5cff25;*/
+    font-family: var(--main-font-family-500Normal);
 }
-h3{
-    font-family: 'Roboto100Italic','roboto serif','sans-serif';
-    color: darkorange;
-    font-size: 15px;
+/*h1{*/
+/*    font-family: var(--main-font-family-boldNormal);*/
+/*    color: var(--accent-color);*/
+/*    font-size: var(--font-md);*/
+/*}*/
+/*h2{*/
+/*    font-family: var(--main-font-family-500Normal);*/
+/*    color: var(--accent-color);*/
+/*    font-size: var(--font-md);*/
+/*}*/
+/*h3{*/
+/*    font-family: var(--main-font-family-100Italic);*/
+/*    color: var(--accent-color);*/
+/*    font-size: var(--font-md);*/
+/*}*/
+header{
+    position: relative;
+    padding: 20px;
+
+    /*border: 2px solid #ff0000;*/
+}
+body{
+    width: 1440px;
+    max-width: 100%;
+    max-height: 100%;
+}
+header nav.header__menu{
+    background-color: #d05050;
+    height: 100px;
+    margin-left: var(--explore-width);
+    margin-right: var(--explore-width);
+}
+header nav.explore{
+    position: absolute;
+    width: var(--explore-width);
+    background-color: darkorange;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+header nav.right{
+    position: absolute;
+    width: var(--explore-width);
+    background-color: darkorange;
+    height: 100vh;
+    right: 0;
+    top: 0;
+}
+main{
+    padding: 20px;
+    margin-left: var(--explore-width);
+    margin-right: var(--explore-width);
+    /*border: 1px solid black;*/
+}
+.explore{
+    /*border: 2px solid #2be6ff;*/
+}
+.header__menu{
+    padding: 20px;
+    /*border: 2px solid #1f5fff;*/
+}
+.right{
+
 }
